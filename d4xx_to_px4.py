@@ -1,7 +1,6 @@
 """
 RealSense D4xx → PX4 Obstacle Avoidance
 ========================================
-Adapted from ArduPilot's d4xx_to_mavlink.py for PX4 using pymavlink.
 Converts RealSense D435/D435i depth frames into OBSTACLE_DISTANCE
 MAVLink messages consumed by PX4's Collision Prevention module.
 
@@ -78,7 +77,7 @@ def init_realsense():
 
 
 def build_filters():
-    """Build the post-processing filter chain (same as ArduPilot article)."""
+    """Build the RealSense post-processing filter chain."""
     return [
         rs.decimation_filter(),
         rs.threshold_filter(),
