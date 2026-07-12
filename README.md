@@ -139,8 +139,6 @@ python3 d4xx_to_px4.py
 # Custom port / baud
 python3 d4xx_to_px4.py --connect /dev/ttyUSB0 --baud 921600
 
-# SITL testing (no real Pixhawk needed)
-python3 d4xx_to_px4.py --connect udp:127.0.0.1:14550
 
 # Debug mode (print live distance readings)
 python3 d4xx_to_px4.py --debug
@@ -152,7 +150,7 @@ python3 d4xx_to_px4.py --debug
 
 ```bash
 # Terminal 1 — run the script
-python3 d4xx_to_px4.py --debug
+python3 d4xx_to_px4.py 
 
 # In QGroundControl:
 # Widgets → MAVLink Inspector → search OBSTACLE_DISTANCE
