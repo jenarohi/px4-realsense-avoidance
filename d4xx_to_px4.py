@@ -234,7 +234,10 @@ def main():
             )
 
             # Send to PX4
-            send_obstacle_distance(conn, distances_cm)
+            try:
+                send_obstacle_distance(conn, distances_cm)
+            except Exception as e:
+                print(f"[WARN] MAVLink send failed: {e}. Retrying next cycle.")
 
             if debug:
                 valid = distances_cm[distances_cm < 65535]
