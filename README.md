@@ -37,7 +37,7 @@ For each sector, the minimum depth reading is taken from the middle row of the d
 | Component | Specification | Notes |
 |---|---|---|
 | Camera | Intel RealSense D435 or D435i | USB 3.0 required |
-| Companion Computer | Jetson Orin / RPi 4 / UP Squared | Needs USB 3.0 port |
+| Companion Computer | Jetson Orin / RPi 4  | Needs USB 3.0 port |
 | Flight Controller | Pixhawk running PX4 firmware | Tested on Pixhawk 6C |
 | Serial Link | FTDI USB-UART adapter | TELEM2 port, 921600 baud |
 | Cable | USB 3.0 Type-A to Type-C | Camera to companion |
